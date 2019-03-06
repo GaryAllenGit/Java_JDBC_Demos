@@ -6,14 +6,14 @@ public class TestConnection {
 
 	public static void main(String[] args) {
 
-		final String url = "jdbc:mysql://helios.hud.ac.uk:3306/gary";
+		final String url = "jdbc:mysql://selene.hud.ac.uk:3306/gary";
 		Connection con = null;
 
 		System.out.println("Testing Connection...");
 
 		try {
 			Class.forName ("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(url, "gary", "garypa55");
+			con = DriverManager.getConnection(url, "gary", "GA06mar19hg");
 			System.out.println("Connection Established...");
 		}
 		catch (SQLException c) {

@@ -8,13 +8,13 @@ public class CreateDB {
 
 	public static void main(String[] args) {
 
-		final String url = "jdbc:mysql://helios.hud.ac.uk:3306/gary";
+		final String url = "jdbc:mysql://selene.hud.ac.uk:3306/gary";
 		Connection con = null;
 
 		System.out.println("Opening Connection...");
 		try {
 			Class.forName ("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(url, "gary", "garypa55");
+			con = DriverManager.getConnection(url, "gary", "GA06mar19hg");
 		}
 		catch (SQLException c) {
 			System.err.println ("Failed to Make Connection!");
