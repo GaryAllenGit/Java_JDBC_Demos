@@ -15,7 +15,7 @@ public class CreateDB {
 		System.out.println("Opening Connection...");
 		try {
 			Class.forName ("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(url, "gary", "GA06mar19hg");
+			con = DriverManager.getConnection(url, "ABC", "ABC");
 		}
 		catch (SQLException c) {
 			System.err.println ("Failed to Make Connection!");

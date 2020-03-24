@@ -2,6 +2,9 @@ A simple Java JDBC/MySQL and SQLite demo.
 
 Dr Gary Allen, the University of Huddersfield.
 
+NOTE - These demos assume that you have an account on the MySQL server 'selene.hud.ac.uk".  Also, I have obviously removed my actual username and passwork from the files before distributing this code, so you will need to enter your own user credentials.
+
+
 There are three versions of this demo:
 One using MySQL with the user credentials hard coded.
 One using MySQL with the user credentials in a properties file.

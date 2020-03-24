@@ -15,7 +15,7 @@ public class TestConnection {
 
 		try {
 			Class.forName ("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(url, "gary", "GA06mar19hg");
+			con = DriverManager.getConnection(url, "ABC", "ABC");
 			System.out.println("Connection Established...");
 		}
 		catch (SQLException c) {
