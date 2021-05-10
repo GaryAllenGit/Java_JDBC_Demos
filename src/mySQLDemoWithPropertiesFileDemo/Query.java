@@ -32,14 +32,10 @@ public class Query {
 
 		System.out.println("Opening Connection...");
 		try {
-			Class.forName (driver);
 			con = DriverManager.getConnection(url, username, password);
 		} catch (SQLException c) {
 			System.err.println ("Failed to Make Connection!");
 			System.exit(1);
-		} 
-		catch (ClassNotFoundException e) {
-			System.err.println ("Failed to Register Driver!");
 		}
 
 		System.out.println("Querying Data...");

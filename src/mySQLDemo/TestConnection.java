@@ -8,22 +8,17 @@ public class TestConnection {
 
 	public static void main(String[] args) {
 
-		final String url = "jdbc:mysql://selene.hud.ac.uk:3306/gary";
+		final String url = "jdbc:mysql://selene.hud.ac.uk:3306/gary?characterEncoding=utf8";
 		Connection con = null;
 
 		System.out.println("Testing Connection...");
 
 		try {
-			Class.forName ("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(url, "ABC", "ABC");
+			con = DriverManager.getConnection(url, "", "");
 			System.out.println("Connection Established...");
 		}
 		catch (SQLException c) {
 			System.err.println ("Failed to Make Connection!");
-			System.exit(1);
-		}
-		catch (ClassNotFoundException e) {
-			System.err.println ("Failed to Register Driver!");
 			System.exit(1);
 		}
 
